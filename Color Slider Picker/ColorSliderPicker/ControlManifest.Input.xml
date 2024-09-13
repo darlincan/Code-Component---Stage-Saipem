@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SaipemNamespace" constructor="ColorSliderPicker" version="7.7.9" display-name-key="ColorSliderPicker" description-key="ColorSliderPicker description" control-type="standard" >
+    
+    <external-service-usage enabled="false">
+      
+    </external-service-usage>
+    
+    <property name="StartColor" display-name-key="StartColor" description-key="StartColor" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="EndColor" display-name-key="EndColor" description-key="EndColor" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="RightColor" display-name-key="RightColor" description-key="RightColor" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="BarHeight" display-name-key="BarrHeight" description-key="BarrHeight" of-type="Whole.None" usage="bound" required="true" />
+    <property name="BarWidth" display-name-key="BarWidth" description-key="BarWidth" of-type="Whole.None" usage="bound" required="true" />
+    <property name="MinValue" display-name-key="MinValue" description-key="MinValue" of-type="Whole.None" usage="bound" required="true" />
+    <property name="MaxValue" display-name-key="MaxValue" description-key="MaxValue" of-type="Whole.None" usage="bound" required="true" />
+    <property name="ShowValue" display-name-key="ShowValue" description-key="ShowValue" of-type="TwoOptions" usage="bound" required="true" />
+    <property name="Orientation" display-name-key="Orientation" description-key="Orientation" of-type="Enum" usage="bound" required="true">
+        <value name="horizontal" display-name-key="Horizontal">Horizontal</value>
+        <value name="vertical" display-name-key="Vertical">Vertical</value>
+    </property>
+
+
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/ColorSlider.css" order="1" />
+    </resources>
+    
+  </control>
+</manifest>
