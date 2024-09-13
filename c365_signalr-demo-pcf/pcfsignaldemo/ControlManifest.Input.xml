@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="collab365" constructor="pcfsignaldemo" version="0.0.5" display-name-key="pcfsignaldemo" description-key="pcfsignaldemo description" control-type="standard" >
+    <property name="signalRHubConnectionURL" display-name-key="SignalR Hub Connection Url" description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="ChatMessageIn" display-name-key="Chat Message In" description-key="Chat Message In Description" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="ChatMessageOut" display-name-key="Chat Message Out" description-key="Chat Message Out Description" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="ChatSenderIn" display-name-key="Person Sending the Chat Msg" description-key="Youtube URL In Description" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1" />
+    </resources>
+  </control>
+</manifest>
